@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#element,
+.red {
+    color: red;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    color: #000;
+    background-color: #c90f0fd2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    font-size: 1.1rem;
+    color: rgb(72, 45, 45);
+}
+
+.left {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.left img {
+    width: 2rem;
+    height: auto;
+    float: left;
+    border-radius: 0.5rem;
+    margin-right: 0.8rem;
+    box-shadow: 0px 0px 20px 0px #000;
+    background-color: #000;
+}
+
+.right {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.leftsection {
+    width: 35%;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.rightsection {
+    width: 35%;
+    animation: floating 3s linear infinite;
+}
+
+.leftsection a {
+    text-decoration: none;
+    color: white;
+}
+
+.rightsection img {
+    width: 80%;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    cursor: pointer;
+}
+
+.button {
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.5rem;
+    background-color: rgb(203, 22, 22);
+    border-bottom-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.btn:hover {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+main hr {
+    border: 0px;
+    height: 1.2px;
+    background: red;
+    margin: 20px 80px;
+}
+
+.secondsection {
+    max-width: 84vw;
+    margin: auto;
+    height: 70vh;
+    margin-bottom: 3rem;
+}
+
+.secondsection h1 {
+    font-size: 2rem;
+}
+
+.secondsection .box {
+    background: red;
+    width: 70rem;
+    height: 2px;
+    margin: 50px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 70px;
+    width: 1px;
+    background: red;
+    margin-right: 15rem;
+}
+
+.image-top {
+    width: 2rem;
+    position: relative;
+    top: -2.1rem;
+    left: -1.3rem;
+}
+
+.vertical-title {
+    width: 8rem;
+    position: relative;
+    top: 2.2rem;
+    font-size: 1.2rem;
+}
+
+.vertical-desc {
+    color: gray;
+    width: 9rem;
+    position: relative;
+    top: 2.5rem;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: rgba(255, 0, 0, 0.626);
+}
+
+.footer {
+    font-size: 1.2rem;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 15rem;
+}
+
+.footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-text {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: rgb(221, 221, 221);
+}
+
+/*------------media-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600&display=swap');
+
+@keyframes floating {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(15px, 0, -15px);
+    }
+
+    80% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .firstsection {
+        flex-direction: column-reverse;
+        margin: 1rem 5rem;
+        align-items: center;
+    }
+
+    main hr {
+        width: 39rem;
+        margin: auto;
+    }
+
+    .leftsection {
+        width: 52%;
+        font-size: 3rem;
+        margin-left: 7rem;
+        padding-top: 1rem;
+    }
+
+    .button {
+        margin-left: 2.3rem;
+    }
+
+    .rightsection {
+        margin-left: 4rem;
+    }
+
+    .secondsection {
+        height: 143vh;
+    }
+
+    .secondsection .box {
+        flex-direction: column;
+        width: 20rem;
+        margin-left: 11.5rem;
+    }
+
+    .image-top {
+        top: 3.2rem;
+        left: -2.2rem;
+    }
+
+    .secondsection .vertical {
+        height: 164px;
+    }
+
+    .secondhead {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .vertical-title {
+        top: 1rem;
+        left: 0.3rem;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    .vertical-desc {
+        top: 1.2rem;
+        left: 0.7rem;
+    }
+
+    footer .footer-text {
+        font-size: .7rem;
+    }
+
+    .footer {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1109px) {
+    .leftsection {
+        width: 48%;
+        font-size: 2rem;
+    }
+
+    .button {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .leftsection {
+        width: 56%;
+    }
+}
+
+@media (max-width:750px) {
+    .leftsection {
+        width: 65%;
+        margin-left: 6rem;
+    }
+}
+
+@media (max-width:667px) {
+    .leftsection {
+        width: 80%;
+    }
+}
+
+@media (max-width: 640px) {
+    main hr {
+        width: 35rem;
+        margin-left: 2rem;
+    }
+
+    nav {
+        width: 40rem;
+    }
+
+    footer {
+        width: 40rem;
+    }
+}
+
+@media (max-width:500px) {
+    .secondsection {
+        height: 100vh;
+    }
+
+    .leftsection {
+        width: 105%;
+        font-size: 1.rem;
+        margin-left: 10rem;
+    }
+
+    .button {
+        width: 100%
+    }
+
+    .secondhead {
+        margin-left: 6.2rem;
+    }
+
+    .vertical {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:390px){
+    .button {
+        width:180%;
+    }
+    .secondhead {
+        font-size:0.8rem;
+    }
+}
