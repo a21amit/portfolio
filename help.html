@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic styling for responsiveness */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .description {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .portrait {
+            flex: 1;
+            text-align: center;
+        }
+
+        .portrait img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Add media queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="description">
+            <p>Hi..! Myself</p>
+            <h2>Kumar Amit</h2>
+            <p>Founder and CEO of <a href="/">A21</a>
+                <br>and I am a passionate<br>
+            </p>
+        </div>
+        <div class="portrait">
+            <img src="images/self_animated.jpg" alt="Portrait Image">
+        </div>
+    </div>
+</body>
+
+</html>
