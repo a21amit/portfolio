@@ -331,8 +331,7 @@ footer .footer-text {
         width: 55%;
         font-size: 1.7rem;
     }
-}
-
+} 
 @media (max-width: 623px) {
     main hr {
         width: 35rem;
