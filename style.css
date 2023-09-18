@@ -310,10 +310,6 @@ footer .footer-text {
         font-size: 2rem;
     }
 
-    .button {
-        margin-left: 1.5rem;
-    }
-
     .rightsection img {
         border-radius: 0;
     }
@@ -331,7 +327,8 @@ footer .footer-text {
         width: 55%;
         font-size: 1.7rem;
     }
-} 
+}
+
 @media (max-width: 623px) {
     main hr {
         width: 35rem;
@@ -346,9 +343,11 @@ footer .footer-text {
         width: 68%;
         margin-left: 0;
     }
-    .secondsection .box{
+
+    .secondsection .box {
         margin: 2rem 4rem;
     }
+
     .button {
         margin-left: 0;
     }
